@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblack"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24sp"
+        android:text="Add Cover Photo"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/capture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:text="Capture photo"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:text="Choose from Gallery"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12sp"
+        android:text="Cancel"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black">
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightblack"
+        android:gravity="right"
+        android:paddingBottom="8sp"
+        android:paddingRight="12sp"
+        android:paddingTop="8sp"
+        android:text="Next"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/next"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black">
+
+            <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightblack"
+                android:orientation="vertical"
+                app:title="Profile"
+                app:titleTextColor="@android:color/white" />
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_below="@+id/toolbar"
+                android:background="@android:color/white" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:hint="Name"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:hint="Phone"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:hint="Password"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <LinearLayout
+                android:id="@+id/gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pass"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:background="@drawable/roundedbutton2"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/male"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="9sp"
+                    android:text="Male"
+
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/female"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/black"
+                    android:gravity="center"
+                    android:padding="9sp"
+                    android:text="Female"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gender"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:hint="Pin Code"
+                android:inputType="number"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pin"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:layout_weight="1"
+                android:hint="State"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/district"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/state"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:layout_weight="1"
+                android:autoSizeMaxTextSize="16sp"
+                android:hint="District"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+
+            <EditText
+                android:id="@+id/tehsil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/district"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:hint="Tehsil"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <EditText
+                android:id="@+id/village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tehsil"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:hint="Village"
+                android:maxLines="1"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/isfarmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/village"
+                android:gravity="center"
+                android:padding="4sp"
+                android:text="Are you a Farmer?"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/isfarmer"
+                android:layout_marginLeft="12sp"
+                android:layout_marginRight="12sp"
+                android:background="@drawable/roundedbutton2"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/yes"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="9sp"
+                    android:text="Yes"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/no"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/black"
+                    android:gravity="center"
+                    android:padding="9sp"
+                    android:text="No"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
